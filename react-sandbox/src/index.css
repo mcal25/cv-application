@@ -1,3 +1,39 @@
 * {
   background-color: rgb(43, 39, 39);
+  color: red;
+}
+
+.section-border {
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: 0.25rem solid rgb(133, 31, 31);
+}
+
+#title-name {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.general-info-area {
+  display: flex;
+  justify-content: center;
+}
+
+.general-info-area > input {
+  text-align: center;
+}
+
+.left-side {
+  width: 66%;
+}
+
+.right-side {
+  width: 33%;
+  border: 0.4rem solid red;
+}
+
+.global-container {
+  display: flex;
 }
