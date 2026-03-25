@@ -1,18 +1,24 @@
 import React from 'react';
 import { useState } from 'react';
 
-const GeneralInfo = ({name, setName, email, setEmail, personalSite, setPersonalSite, github, setGithub}) => {
+const GeneralInfo = ({name, setName, phoneNumber, setPhoneNumber, email, setEmail, personalSite, setPersonalSite, github, setGithub}) => {
     return (
         <div className='section-border'>
-            <input type="text" id="title-name" placeholder="John Doe"/>
+            <input 
+                type="text"
+                id="title-name"
+                placeholder="John Doe"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+            />
             <div className='general-info-area'>
                 <input 
                     type="text"
                     className='general-info'
                     id='phone-number'
-                    value={name}
+                    value={phoneNumber}
                     placeholder='(888)-888-8888'
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
                 />
                 <input type="text"
                     className='general-info'
