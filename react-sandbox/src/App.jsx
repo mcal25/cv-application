@@ -15,7 +15,12 @@ function App() {
   const [github, setGithub] = useState();
   const [degree, setDegree] = useState();
   const [job, setJob] = useState();
+  const [company, setCompany] = useState();
+  const [responsibilities, setResponsibilities] = useState();
+  const [datesOfEmployment, setDatesOfEmployment] = useState();
   const [skills, setSkills] = useState();
+  const [school, setSchool] = useState();
+  const [datesOfSchool, setdatesOfSchool] = useState();
   const [certs, setCerts] = useState();
 
   return (
@@ -37,10 +42,20 @@ function App() {
           <EducationalExperience
             degree={degree}
             setDegree={setDegree}
+            school={school}
+            setSchool={setSchool}
+            datesOfSchool={datesOfSchool}
+            setdatesOfSchool={setdatesOfSchool}
           />
           <WorkExperience
             job={job}
             setJob={setJob}
+            company={company}
+            setCompany={setCompany}
+            responsibilities={responsibilities}
+            setResponsibilities={setResponsibilities}
+            datesOfEmployment={datesOfEmployment}
+            setDatesOfEmployment={setDatesOfEmployment}
           />
           <SkillsAndCerts
             skills={skills}
@@ -57,7 +72,12 @@ function App() {
             personalSite={personalSite}
             github={github}
             degree={degree}
+            school={school}
+            datesOfSchool={datesOfSchool}
             job={job}
+            company={company}
+            responsibilities={responsibilities}
+            datesOfEmployment={datesOfEmployment}
             skills={skills}
             certs={certs}
           />

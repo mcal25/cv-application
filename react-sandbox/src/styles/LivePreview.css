@@ -1,0 +1,32 @@
+
+
+#main-name {
+    color: rgb(142, 142, 213);
+    font-size: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.general-info-area {
+    display: flex;
+}
+
+.general-info-area > p {
+    margin: 5px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(154, 42, 8);
+}
+
+.section-title > p {
+    color: purple;
+}
+
+#header-area {
+    background-color: black;
+}
